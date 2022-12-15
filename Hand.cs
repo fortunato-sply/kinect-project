@@ -20,6 +20,18 @@ public class HandRecognizer {
 
     public Point GetTopPixel()
     {
-        // TODO
+        for (int j = 0; j < img.Height; j++)
+    {
+        for (int i = ((rightpixel()).x)+125; i > ((rightpixel()).x)-125; i--)
+        {
+            Color pixel = img.GetPixel(i,j);
+
+            if (pixel.G != 0)
+            {
+                return new Point(i,j);
+                break;
+            }
+        }
+    }
     }
 }
