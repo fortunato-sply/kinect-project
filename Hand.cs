@@ -1,6 +1,6 @@
 public class HandRecognizer {
     private Bitmap bmp = null;
-    public Point RightPixel(Bitmap bmp)
+    public Point GetRightPixel(Bitmap bmp)
     {
         for (int i = bmp.Width - 1; i > 0; i--)
         {
@@ -16,5 +16,10 @@ public class HandRecognizer {
             }
         }
         throw new Exception();
+    }
+
+    public Point GetTopPixel()
+    {
+        // TODO
     }
 }
