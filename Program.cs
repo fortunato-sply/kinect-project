@@ -22,24 +22,42 @@ form.KeyDown += (o, e) =>
         Application.Exit();
 };
 
-form.Load += (o, e) =>
-{
-    bmp = new Bitmap(pb.Width, pb.Height);
-    pb.Image = bmp;
+Graphics g = null;
+form.Load += delegate
+        {
+            bmp = new Bitmap(pb.Width, pb.Height);
+            g = Graphics.FromImage(bmp);
+            g.Clear(Color.White);
+            pb.Image = bmp;
+            g.DrawImage(Bitmap.FromFile("BMP1.bmp"), new Point(0,0));
+
+            HandRecognizer handrec = new HandRecognizer();
+            var center = handrec.GetCenterPixel(Bitmap.FromFile("BMP1.bmp") as Bitmap);
+            Pen pen = new Pen(Color.Red, 2);
+            g.FillRectangle(Brushes.Red, 42, 12, 1, 1);
+
+            tm.Start();
+        };
+
+// form.Load += (o, e) =>
+// {
+//     bmp = Bitmap.FromFile("BMP1.bmp") as Bitmap;
+//     pb.Image = bmp;
     
-    HandRecognizer handrec = new HandRecognizer();
-    var teste1 = handrec.GetTopPixel(Bitmap.FromFile("BMP1.bmp") as Bitmap).ToString();
-    var g = Graphics.FromImage(bmp);
-    DrawStrin(g, teste1);
-    // g.DrawLine(Pens.Blue, 
-    //     0, 0,
-    //     pb.Width, pb.Height);
+//     HandRecognizer handrec = new HandRecognizer();
+//     var teste1 = handrec.GetCenterPixel(Bitmap.FromFile("BMP2.bmp") as Bitmap).ToString();
+//     var g = Graphics.FromImage(bmp);
+//     // DrawStrin(g, teste1);
+//     g.
+//     // g.DrawLine(Pens.Blue, 
+//     //     0, 0,
+//     //     pb.Width, pb.Height);
 
 
 
-    // pb.Refresh();
-    tm.Start();
-};
+//     // pb.Refresh();
+//     tm.Start();
+// };
 
 // int i = 0;
 // tm.Tick += (o, e) =>

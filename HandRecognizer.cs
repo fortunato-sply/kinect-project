@@ -10,7 +10,6 @@ public class HandRecognizer {
 
                 if (pixel.G != 0)
                 {
-                    Console.WriteLine($"{i}, {j}");
                     return new Point(i, j);
                 }
             }
@@ -35,5 +34,13 @@ public class HandRecognizer {
             }
         }
         throw new Exception();
+    }
+
+    public Point GetCenterPixel(Bitmap bmp)
+    {
+        Point topPixel = GetTopPixel(bmp);
+
+        Point centerPixel = new Point(topPixel.X, (topPixel.Y + 95));
+        return centerPixel;
     }
 }
