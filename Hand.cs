@@ -1,6 +1,6 @@
 public class HandRecognizer {
     private Bitmap bmp = null;
-    public Point GetRightPixel(Bitmap bmp)
+    private Point getRightPixel(Bitmap bmp)
     {
         for (int i = bmp.Width - 1; i > 0; i--)
         {
@@ -18,20 +18,22 @@ public class HandRecognizer {
         throw new Exception();
     }
 
-    public Point GetTopPixel()
+    public Point GetTopPixel(Bitmap bmp)
     {
-        for (int j = 0; j < img.Height; j++)
-    {
-        for (int i = ((rightpixel()).x)+125; i > ((rightpixel()).x)-125; i--)
-        {
-            Color pixel = img.GetPixel(i,j);
+        Point rightPixel = getRightPixel(bmp);
 
-            if (pixel.G != 0)
+        for (int j = 0; j < bmp.Height; j++)
+        {
+            for (int i = (rightPixel.X + 125); i > (rightPixel.X -125); i--)
             {
-                return new Point(i,j);
-                break;
+                Color pixel = bmp.GetPixel(i,j);
+
+                if (pixel.G != 0)
+                {
+                    return new Point(i,j);
+                }
             }
         }
-    }
+        throw new Exception();
     }
 }

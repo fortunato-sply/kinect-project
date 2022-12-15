@@ -28,7 +28,7 @@ form.Load += (o, e) =>
     pb.Image = bmp;
     
     HandRecognizer handrec = new HandRecognizer();
-    var teste1 = handrec.RightPixel(Bitmap.FromFile("BMP1.bmp") as Bitmap).ToString();
+    var teste1 = handrec.GetTopPixel(Bitmap.FromFile("BMP1.bmp") as Bitmap).ToString();
     var g = Graphics.FromImage(bmp);
     DrawStrin(g, teste1);
     // g.DrawLine(Pens.Blue, 
