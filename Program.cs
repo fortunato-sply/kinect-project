@@ -9,6 +9,7 @@ form.FormBorderStyle = FormBorderStyle.None;
 
 PictureBox pb = new PictureBox();
 pb.Dock = DockStyle.Fill;
+pb.SizeMode = PictureBoxSizeMode.Normal;
 form.Controls.Add(pb);
 
 Bitmap bmp = null;
@@ -24,20 +25,26 @@ form.KeyDown += (o, e) =>
 
 Graphics g = null;
 form.Load += delegate
-        {
-            bmp = new Bitmap(pb.Width, pb.Height);
-            g = Graphics.FromImage(bmp);
-            g.Clear(Color.White);
-            pb.Image = bmp;
-            g.DrawImage(Bitmap.FromFile("BMP1.bmp"), new Point(0,0));
+{
+    bmp = new Bitmap(pb.Width, pb.Height);
+    g = Graphics.FromImage(bmp);
+    g.Clear(Color.White);
+    pb.Image = bmp;
 
-            HandRecognizer handrec = new HandRecognizer();
-            var center = handrec.GetCenterPixel(Bitmap.FromFile("BMP1.bmp") as Bitmap);
-            Pen pen = new Pen(Color.Red, 2);
-            g.FillRectangle(Brushes.Red, 42, 12, 1, 1);
+    var img = Bitmap.FromFile("BMP2.bmp") as Bitmap;
 
-            tm.Start();
-        };
+    HandRecognizer handrec = new HandRecognizer();
+    var center = handrec.GetCenterPixel(img);
+
+    
+    Pen pen = new Pen(Color.Red, 2);
+    g.DrawImage(img, new Rectangle(0, 0, 1600, 1200),
+        new Rectangle(0, 0, 1600, 1200), GraphicsUnit.Pixel);
+    g.FillRectangle(Brushes.Red, center.X - 5, center.Y - 5, 10, 10);
+    pb.Refresh();
+    tm.Start();
+    // DrawPoint(g,500,500) 
+};
 
 // form.Load += (o, e) =>
 // {
@@ -85,5 +92,26 @@ void DrawStrin(Graphics form, string text)
     drawBrush.Dispose();
     form.Dispose();
 }
+
+
+Bitmap DrawPoint(Bitmap m, int x, int y)
+{
+    Bitmap returnBmp = new Bitmap(m.Width, m.Height);
+    for (int i = 0; i < m.Width; i++)
+        for (int j = 0; j < m.Height; j++)
+            returnBmp.SetPixel(i,j, m.GetPixel(i,j));
+    
+    for(int i = x-5; i < x+5; i++)
+    {
+        for(int j = y-10; j < y+10; j++){
+            returnBmp.SetPixel(i,j,Color.Red);
+        }
+    }
+    return returnBmp;
+}
+
+
+
+
 
 Application.Run(form);

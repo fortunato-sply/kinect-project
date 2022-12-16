@@ -1,4 +1,5 @@
-public class HandRecognizer {
+public class HandRecognizer
+{
     private Bitmap bmp = null;
     private Point getRightPixel(Bitmap bmp)
     {
@@ -6,12 +7,13 @@ public class HandRecognizer {
         {
             for (int j = 0; j < bmp.Height; j++)
             {
-                Color pixel = bmp.GetPixel(i,j);
+                Color pixel = bmp.GetPixel(i, j);
 
                 if (pixel.G != 0)
                 {
                     return new Point(i, j);
                 }
+                
             }
         }
         throw new Exception();
@@ -23,7 +25,7 @@ public class HandRecognizer {
 
         for (int j = 0; j < bmp.Height; j++)
         {
-            for (int i = (rightPixel.X + 125); i > (rightPixel.X -125); i--)
+            for (int i = (rightPixel.X - 80); i < (rightPixel.X + 80); i++)
             {
                 Color pixel = bmp.GetPixel(i,j);
 
@@ -40,7 +42,28 @@ public class HandRecognizer {
     {
         Point topPixel = GetTopPixel(bmp);
 
-        Point centerPixel = new Point(topPixel.X, (topPixel.Y + 95));
-        return centerPixel;
+        for (int k = 0; k < 3; k++)
+        {
+            long sX = 0;
+            long sY = 0;
+            int count = 0;
+            for (int j = topPixel.Y - 100; j < topPixel.Y + 100; j += 5)
+            {
+                for (int i = topPixel.X - 100; i < topPixel.X + 100; i += 5)
+                {
+                    Color pixel = bmp.GetPixel(i, j);
+
+                    if (pixel.G != 0)
+                    {
+                        sX += i;
+                        sY += j;
+                        count++;
+                    }
+                }
+            }
+            topPixel = new Point((int)(sX / count), (int)(sY / count));
+        }
+        
+        return topPixel;
     }
 }
