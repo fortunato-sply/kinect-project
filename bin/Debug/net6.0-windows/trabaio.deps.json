@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "hand/1.0.0": {
+      "trabaio/1.0.0": {
         "runtime": {
-          "hand.dll": {}
+          "trabaio.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "hand/1.0.0": {
+    "trabaio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

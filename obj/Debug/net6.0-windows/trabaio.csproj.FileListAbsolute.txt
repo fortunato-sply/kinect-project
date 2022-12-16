@@ -1,0 +1,45 @@
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\obj\Debug\net6.0-windows\trabaio.csproj.AssemblyReference.cache
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\obj\Debug\net6.0-windows\trabaio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\obj\Debug\net6.0-windows\trabaio.AssemblyInfoInputs.cache
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\obj\Debug\net6.0-windows\trabaio.AssemblyInfo.cs
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\obj\Debug\net6.0-windows\trabaio.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\bin\Debug\net6.0-windows\trabaio.exe
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\bin\Debug\net6.0-windows\trabaio.deps.json
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\bin\Debug\net6.0-windows\trabaio.runtimeconfig.json
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\bin\Debug\net6.0-windows\trabaio.dll
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\bin\Debug\net6.0-windows\ref\trabaio.dll
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\bin\Debug\net6.0-windows\trabaio.pdb
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\obj\Debug\net6.0-windows\trabaio.dll
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\obj\Debug\net6.0-windows\ref\trabaio.dll
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\obj\Debug\net6.0-windows\trabaio.pdb
+C:\Users\Aluno\Downloads\ProvaCSharp-main\ProvaC#\trabaio\obj\Debug\net6.0-windows\trabaio.genruntimeconfig.cache
+C:\Users\Aluno\Desktop\trabaio\bin\Debug\net6.0-windows\trabaio.exe
+C:\Users\Aluno\Desktop\trabaio\bin\Debug\net6.0-windows\trabaio.deps.json
+C:\Users\Aluno\Desktop\trabaio\bin\Debug\net6.0-windows\trabaio.runtimeconfig.json
+C:\Users\Aluno\Desktop\trabaio\bin\Debug\net6.0-windows\trabaio.dll
+C:\Users\Aluno\Desktop\trabaio\bin\Debug\net6.0-windows\ref\trabaio.dll
+C:\Users\Aluno\Desktop\trabaio\bin\Debug\net6.0-windows\trabaio.pdb
+C:\Users\Aluno\Desktop\trabaio\obj\Debug\net6.0-windows\trabaio.csproj.AssemblyReference.cache
+C:\Users\Aluno\Desktop\trabaio\obj\Debug\net6.0-windows\trabaio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Desktop\trabaio\obj\Debug\net6.0-windows\trabaio.AssemblyInfoInputs.cache
+C:\Users\Aluno\Desktop\trabaio\obj\Debug\net6.0-windows\trabaio.AssemblyInfo.cs
+C:\Users\Aluno\Desktop\trabaio\obj\Debug\net6.0-windows\trabaio.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\trabaio\obj\Debug\net6.0-windows\trabaio.dll
+C:\Users\Aluno\Desktop\trabaio\obj\Debug\net6.0-windows\ref\trabaio.dll
+C:\Users\Aluno\Desktop\trabaio\obj\Debug\net6.0-windows\trabaio.pdb
+C:\Users\Aluno\Desktop\trabaio\obj\Debug\net6.0-windows\trabaio.genruntimeconfig.cache
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\bin\Debug\net6.0-windows\trabaio.exe
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\bin\Debug\net6.0-windows\trabaio.deps.json
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\bin\Debug\net6.0-windows\trabaio.runtimeconfig.json
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\bin\Debug\net6.0-windows\trabaio.dll
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\bin\Debug\net6.0-windows\ref\trabaio.dll
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\bin\Debug\net6.0-windows\trabaio.pdb
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\obj\Debug\net6.0-windows\trabaio.csproj.AssemblyReference.cache
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\obj\Debug\net6.0-windows\trabaio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\obj\Debug\net6.0-windows\trabaio.AssemblyInfoInputs.cache
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\obj\Debug\net6.0-windows\trabaio.AssemblyInfo.cs
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\obj\Debug\net6.0-windows\trabaio.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\obj\Debug\net6.0-windows\trabaio.dll
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\obj\Debug\net6.0-windows\ref\trabaio.dll
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\obj\Debug\net6.0-windows\trabaio.pdb
+C:\Users\Aluno\Desktop\Nova pasta\kinect-project\obj\Debug\net6.0-windows\trabaio.genruntimeconfig.cache
