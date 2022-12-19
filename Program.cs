@@ -23,6 +23,31 @@ form.KeyDown += (o, e) =>
         Application.Exit();
 };
 
+
+ //-------------- VISUALIZAR STRING FUNCIONANDO NAO APAGA POR FAVOOR ----------
+
+// Graphics g = null;
+// form.Load += delegate
+// {
+//     bmp = new Bitmap(pb.Width, pb.Height);
+//     g = Graphics.FromImage(bmp);
+//     g.Clear(Color.White);
+//     pb.Image = bmp;
+
+
+//     var img = Bitmap.FromFile("BMP1.bmp") as Bitmap;
+
+//     HandRecognizer handrec = new HandRecognizer();
+
+//     DrawStrin(g, handrec.HandOpen(img));
+
+
+// };
+
+
+
+// // --------------- DAQUI PRA BAIXO É O CÓDIGO DE VISUALIZAR O PONTO NA IMAGEM ----------------
+
 Graphics g = null;
 form.Load += delegate
 {
@@ -60,6 +85,13 @@ form.Load += delegate
     // DrawPoint(g,500,500) 
 };
 
+
+// // --------------- ATE AQUI PRA VISUALIZAR A IMAGEM, O RESTO COMENTADO É LIXO ----------------
+
+
+
+// // --------------- ISSO AQUI NAO TA FUNCIONANDO, E NÃO SERVE PRA NADA, MAS NAO APAGAR CASO TENHA UTILIDADE FUTURA ----------------
+
 // form.Load += (o, e) =>
 // {
 //     bmp = Bitmap.FromFile("BMP1.bmp") as Bitmap;
@@ -93,6 +125,10 @@ form.Load += delegate
     
 //     pb.Refresh();
 //;
+
+
+// // --------------- O LIXO ACABA AQUI  ----------------
+
 
 void DrawStrin(Graphics form, string text)
 {

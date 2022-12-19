@@ -70,33 +70,24 @@ public class HandRecognizer
     public Boolean HandOpen(Bitmap bmp)
     {
         Point topPixel = GetTopPixel(bmp);
-        int calibration = 60;
-        double temp = 0;
-        long whites = 1000;
-        long count = 0;
+        int calibration = 70;
+        double whites = 0;
+        double count = 0;
         for (int j = topPixel.Y; j < (topPixel.Y + 50) ; j++)
-        {
             for (int i = (topPixel.X - 50); i < (topPixel.X + 50); i++)
             {
                 Color pixel = bmp.GetPixel(i, j);
 
                 if (pixel.G != 0)
-                {
-                    whites += 1;
-                }
-                count += 1;
+                    whites++;
+                count++;
             }
-        }
 
-        temp = (whites/count)*100;
+        double temp = whites/count*100.0;
 
-        if ((int)temp>calibration)
-        {
+        if (temp>calibration)
             return false;
-        }
-        else
-        {
-            return true;
-        }
+        
+        return true;
     }
 }
