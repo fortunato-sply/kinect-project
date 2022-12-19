@@ -43,3 +43,18 @@ C:\Users\Aluno\Desktop\Nova pasta\kinect-project\obj\Debug\net6.0-windows\hand.d
 C:\Users\Aluno\Desktop\Nova pasta\kinect-project\obj\Debug\net6.0-windows\ref\hand.dll
 C:\Users\Aluno\Desktop\Nova pasta\kinect-project\obj\Debug\net6.0-windows\hand.pdb
 C:\Users\Aluno\Desktop\Nova pasta\kinect-project\obj\Debug\net6.0-windows\hand.genruntimeconfig.cache
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\obj\Debug\net6.0-windows\hand.csproj.AssemblyReference.cache
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\obj\Debug\net6.0-windows\hand.GeneratedMSBuildEditorConfig.editorconfig
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\obj\Debug\net6.0-windows\hand.AssemblyInfoInputs.cache
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\obj\Debug\net6.0-windows\hand.AssemblyInfo.cs
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\obj\Debug\net6.0-windows\hand.csproj.CoreCompileInputs.cache
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\obj\Debug\net6.0-windows\hand.dll
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\obj\Debug\net6.0-windows\refint\hand.dll
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\obj\Debug\net6.0-windows\hand.pdb
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\bin\Debug\net6.0-windows\hand.exe
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\bin\Debug\net6.0-windows\hand.deps.json
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\bin\Debug\net6.0-windows\hand.runtimeconfig.json
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\bin\Debug\net6.0-windows\hand.dll
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\bin\Debug\net6.0-windows\hand.pdb
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\obj\Debug\net6.0-windows\hand.genruntimeconfig.cache
+S:\COM\Human_Resources\01.Engineering_Tech_School\02.Internal\10 - Aprendizes\14 - Desenvolvimento de sistemas 2022\Lucas Fortunato\C#\kinect-project\obj\Debug\net6.0-windows\ref\hand.dll

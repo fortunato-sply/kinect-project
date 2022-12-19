@@ -31,10 +31,10 @@ form.Load += delegate
     g.Clear(Color.White);
     pb.Image = bmp;
 
-    var img = Bitmap.FromFile("BMP2.bmp") as Bitmap;
+    var img = Bitmap.FromFile("BMP1.bmp") as Bitmap;
 
     HandRecognizer handrec = new HandRecognizer();
-    var center = handrec.GetCenterPixel(img);
+    var center = handrec.getRightPixell(img);
 
     
     Pen pen = new Pen(Color.Red, 2);

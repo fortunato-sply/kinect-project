@@ -1,7 +1,11 @@
+using System.Drawing;
+using System.Windows.Forms;
+using System.Drawing.Imaging;
+
 public class HandRecognizer
 {
     private Bitmap bmp = null;
-    private Point getRightPixel(Bitmap bmp)
+    public Point getRightPixel(Bitmap bmp)
     {
         for (int i = bmp.Width - 1; i > 0; i--)
         {
@@ -14,6 +18,33 @@ public class HandRecognizer
                     return new Point(i, j);
                 }
                 
+            }
+        }
+        throw new Exception();
+    }
+
+    public Point getRightPixell(Bitmap bmp)
+    {
+        var data = bmp.LockBits(
+            new Rectangle(0, 0, bmp.Width, bmp.Height),
+            ImageLockMode.ReadWrite,
+            PixelFormat.Format24bppRgb);
+        
+        unsafe
+        {
+            byte* p = (byte*)data.Scan0.ToPointer();
+            
+            for (int j = bmp.Width - 1; j > 0; j--)
+            {
+                for (int i = 0; i < bmp.Height; i++)
+                {
+                    byte* l = p + (i * data.Stride) + 3 * j;
+                    if(l[0] > 100)
+                    {
+                        bmp.UnlockBits(data);
+                        return new Point(j, i);
+                    }
+                }
             }
         }
         throw new Exception();
