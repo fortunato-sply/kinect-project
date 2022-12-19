@@ -37,10 +37,24 @@ form.Load += delegate
     var center = handrec.GetCenterPixel(img);
 
     
-    Pen pen = new Pen(Color.Red, 2);
+    if (handrec.HandOpen(img))
+    {
+        Pen pen = new Pen(Color.Green, 2);
+    }
+    else
+    {
+        Pen pen = new Pen(Color.Red, 2);
+    }
     g.DrawImage(img, new Rectangle(0, 0, 1600, 1200),
         new Rectangle(0, 0, 1600, 1200), GraphicsUnit.Pixel);
-    g.FillRectangle(Brushes.Red, center.X - 5, center.Y - 5, 10, 10);
+    if (handrec.HandOpen(img))
+    {
+        g.FillRectangle(Brushes.Green, center.X - 5, center.Y - 5, 10, 10);
+    }
+    else
+    {
+        g.FillRectangle(Brushes.Red, center.X - 5, center.Y - 5, 10, 10);
+    }
     pb.Refresh();
     tm.Start();
     // DrawPoint(g,500,500) 
