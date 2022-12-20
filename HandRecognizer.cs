@@ -5,25 +5,8 @@ using System.Drawing.Imaging;
 public class HandRecognizer
 {
     private Bitmap bmp = null;
-    public Point getRightPixel(Bitmap bmp)
-    {
-        for (int i = bmp.Width - 1; i > 0; i--)
-        {
-            for (int j = 0; j < bmp.Height; j++)
-            {
-                Color pixel = bmp.GetPixel(i, j);
 
-                if (pixel.G != 0)
-                {
-                    return new Point(i, j);
-                }
-                
-            }
-        }
-        throw new Exception();
-    }
-
-    public Point getRightPixell(Bitmap bmp)
+    private Point getRightPixel(Bitmap bmp)
     {
         var data = bmp.LockBits(
             new Rectangle(0, 0, bmp.Width, bmp.Height),
@@ -52,6 +35,11 @@ public class HandRecognizer
 
     public Point GetTopPixel(Bitmap bmp)
     {
+        var data = bmp.LockBits(
+            new Rectangle(0, 0, bmp.Width, bmp.Height),
+            ImageLockMode.ReadWrite,
+            PixelFormat.Format24bppRgb);
+            
         Point rightPixel = getRightPixel(bmp);
 
         for (int j = 0; j < bmp.Height; j++)
